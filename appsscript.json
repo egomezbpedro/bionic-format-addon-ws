@@ -1,5 +1,7 @@
 {
-    "timeZone": "America/New_York",
+  "timeZone": "Europe/Madrid", 
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
     "dependencies": {
       "enabledAdvancedServices": [{
         "userSymbol": "Docs",
@@ -12,7 +14,6 @@
       "https://www.googleapis.com/auth/script.external_request",
       "https://www.googleapis.com/auth/userinfo.email"
     ],
-    "exceptionLogging": "STACKDRIVER",
     "addOns": {
       "bionicReader": {
         "homepageTrigger": {
@@ -20,22 +21,13 @@
         },
         "universalActions": [{
           "label": "Bionic Reader",
-          "defaultIcon": {
-            "url": "https://www.example.com/icon.png",
-            "altText": "Bionic Reader"
-          },
-          "openLink": {
-            "url": "https://www.example.com"
-          }
         }],
         "useLocaleFromApp": true,
         "sidebar": {
           "title": "Bionic Reader",
-          "url": "https://www.example.com/sidebar.html",
           "width": 300,
           "height": 400
         }
       }
     }
-  }
-  
+}
