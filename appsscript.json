@@ -1,0 +1,41 @@
+{
+    "timeZone": "America/New_York",
+    "dependencies": {
+      "enabledAdvancedServices": [{
+        "userSymbol": "Docs",
+        "version": "v1",
+        "serviceId": "docs"
+      }]
+    },
+    "oauthScopes": [
+      "https://www.googleapis.com/auth/documents.currentonly",
+      "https://www.googleapis.com/auth/script.external_request",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ],
+    "exceptionLogging": "STACKDRIVER",
+    "addOns": {
+      "bionicReader": {
+        "homepageTrigger": {
+          "runFunction": "onOpen"
+        },
+        "universalActions": [{
+          "label": "Bionic Reader",
+          "defaultIcon": {
+            "url": "https://www.example.com/icon.png",
+            "altText": "Bionic Reader"
+          },
+          "openLink": {
+            "url": "https://www.example.com"
+          }
+        }],
+        "useLocaleFromApp": true,
+        "sidebar": {
+          "title": "Bionic Reader",
+          "url": "https://www.example.com/sidebar.html",
+          "width": 300,
+          "height": 400
+        }
+      }
+    }
+  }
+  
