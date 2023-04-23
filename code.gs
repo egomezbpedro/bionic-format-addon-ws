@@ -59,9 +59,12 @@ function formatSelectedText() {
           // Gets the first letter of the word and the rest of the word
           var firstLetter = word.charAt(0);
           var restOfWord = word.substring(1);
+          var boldLength = Math.floor((firstLetter.length + restOfWord.length) * 0.4); // Set bold length to 40%
           
           // Sets the bold formatting for the first letter of the word
-          text.setBold(startOffset + selectedText.indexOf(word), startOffset + selectedText.indexOf(word) + firstLetter.length, true);
+          text.setBold(startOffset + selectedText.indexOf(word), 
+                       startOffset + selectedText.indexOf(word) + boldLength, 
+                       true);
         }
       }
     }
