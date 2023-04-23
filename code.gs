@@ -31,7 +31,7 @@ function formatSelectedText() {
         if (word.length > 0) {
           var firstLetter = word.charAt(0);
           var restOfWord = word.substring(1);
-          text.setBold(startOffset + j, startOffset + j + 1, true);
+          text.setBold(startOffset + selectedText.indexOf(word), startOffset + selectedText.indexOf(word) + firstLetter.length, true);
         }
       }
     }
