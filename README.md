@@ -12,7 +12,7 @@ To use Bionic Reader add-on for Google Docs, follow these steps:
 5. Click the "Format selected text" button in the sidebar.
 6. Bionic Reader will then format the selected text by making the first 60% of each word bold.
 
-You can also publish this add-on to Workspace add-on Marketplace if you want :).
+You can also publish this to Workspace add-on Marketplace if you want :).
 
 ### Example
 
